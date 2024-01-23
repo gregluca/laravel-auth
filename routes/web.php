@@ -24,7 +24,7 @@ Route::middleware(['auth','verified'])
     ->prefix('admin')
     ->group(function() {
         Route::get('/' , [DashboardController::class,'index'])->name('dashboard');
-        Route::resource('boolfolios', BoolfolioController::class);
+        Route::resource('boolfolios', BoolfolioController::class)->parameters(['boolfolio' => 'boofolio:slug']);
     });
 
 require __DIR__.'/auth.php';

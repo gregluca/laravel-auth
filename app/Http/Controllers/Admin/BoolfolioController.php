@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Boolfolio;
 use Illuminate\Support\Str;
 
+
 class BoolfolioController extends Controller
 {
     /**
@@ -16,8 +17,8 @@ class BoolfolioController extends Controller
      */
     public function index()
     {
-        $boolfolio = Boolfolio::all();
-        return view('admin.projects.index',compact('boolfolio'));
+        $boolfolios = Boolfolio::all();
+        return view('admin.projects.index',compact('boolfolios'));
     }
 
     /**
@@ -44,12 +45,13 @@ class BoolfolioController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  Boolfolio $boolfolio
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Boolfolio $boolfolio)
     {
-        //
+        return view('admin.projects.show', compact('boolfolios'));
+        // $boolfolios = Boolfolio::where('slug', $slug)->first();
     }
 
     /**
