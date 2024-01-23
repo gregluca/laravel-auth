@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('boolfolios', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('description');
+            $table->date('project_date');
+            $table->string('slug');
             $table->timestamps();
         });
     }
