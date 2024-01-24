@@ -18,13 +18,13 @@
           </tr>
         </thead>
         <tbody>
-            @foreach ($boolfolios as $boolfolio)
+            @foreach ($projects as $project)
                 <tr>
-                    <th scope="row">{{ $boolfolio->id }}</th>
-                    <td>{{ $boolfolio->title }}</td>
-                    <td>{{ $boolfolio->created_at }}</td>
+                    <th scope="row">{{ $project->id }}</th>
+                    <td>{{ $project->title }}</td>
+                    <td>{{ $project->created_at }}</td>
                     <td>
-                      <a class="btn btn-success" href="{{ route('admin.projects.show', ['boolfolio' => $boolfolio->slug]) }}">Dettagli</a>
+                      <a class="btn btn-success" href="{{ route('admin.projects.show', ['project' => $project->slug]) }}">Dettagli</a>
                     </td>
                 </tr>
             @endforeach

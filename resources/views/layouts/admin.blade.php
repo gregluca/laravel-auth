@@ -64,9 +64,9 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.boolfolios.index' ? 'bg-secondary' : '' }}"
-                                    href="{{ route('admin.boolfolios.index') }}">
-                                    <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> boolfolios
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-secondary' : '' }}"
+                                    href="{{ route('admin.projects.index') }}">
+                                    <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> projects
                                 </a>
                             </li>
                         </ul>

@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Boolfolio;
+use App\Models\Project;
 use Illuminate\Support\Str;
 
 
-class BoolfolioController extends Controller
+class ProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +17,8 @@ class BoolfolioController extends Controller
      */
     public function index()
     {
-        $boolfolios = Boolfolio::all();
-        return view('admin.projects.index',compact('boolfolios'));
+        $projects = Project::all();
+        return view('admin.projects.index',compact('projects'));
     }
 
     /**
@@ -45,13 +45,13 @@ class BoolfolioController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  Boolfolio $boolfolio
+     * @param Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(Boolfolio $boolfolio)
+    public function show(Project $project)
     {
-        return view('admin.projects.show', compact('boolfolios'));
-        // $boolfolios = Boolfolio::where('slug', $slug)->first();
+        return view('admin.projects.show', compact('project'));
+        // $projects = Project::where('slug', $slug)->first();
     }
 
     /**
