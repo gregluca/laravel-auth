@@ -21,6 +21,7 @@
             </div>   
 
             <button class="btn btn-warning" type="submit">Salva</button>
+            <a class="btn btn btn-secondary" href="{{ route('admin.projects.edit', ['project' => $project->slug]) }}">Cancella</a>
 
         </form>
     </div>
