@@ -9,15 +9,15 @@
         <ul>
             <li class="my-3">
                 <strong>Date: </strong>
-                {{ $project->created_at }}
+                {{ $project->project_date }}
             </li>
             <li class="my-3">
                 <strong>Slug: </strong>
                 {{ $project->slug }}
             </li>
             <li class="my-3">
-                <strong>Content: </strong>
-                {{ $project->content }}
+                <strong>Description </strong>
+                {{ $project->description }}
             </li>
         </ul>
 
