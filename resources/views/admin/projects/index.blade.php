@@ -28,7 +28,7 @@
                 <tr>
                     <th scope="row">{{ $project->id }}</th>
                     <td>{{ $project->title }}</td>
-                    <td>{{ $project->created_at }}</td>
+                    <td>{{ $project->project_date }}</td>
                     <td class="p-5">
                       <a class="btn btn-success m-3" href="{{ route('admin.projects.show', ['project' => $project->slug]) }}">Dettagli</a>
                       <a class="btn btn-warning m-3" href="{{ route('admin.projects.edit', ['project' => $project->slug]) }}">

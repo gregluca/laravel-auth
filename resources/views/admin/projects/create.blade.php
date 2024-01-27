@@ -27,6 +27,8 @@
                 <textarea class="form-control" id="content" rows="3" name="{{ old('description') }}" ></textarea>
             </div>    
 
+            <div class="mb-3"></div>
+
             <button class="btn btn-success" type="submit">Salva</button>
 
         </form>

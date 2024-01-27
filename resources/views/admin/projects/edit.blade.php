@@ -20,6 +20,11 @@
                 <textarea class="form-control" id="content" rows="3" name="content">{{ old('content', $project->description) }}</textarea>
             </div>   
 
+            <div class="mb-3">
+                <label for="date">Data: </label>
+                <input type="date" name="date" id="date" value="{{ old('project_date', $project->project_date) }}">
+            </div>
+
             <button class="btn btn-warning" type="submit">Salva</button>
             <a class="btn btn btn-secondary" href="{{ route('admin.projects.edit', ['project' => $project->slug]) }}">Cancella</a>
 
