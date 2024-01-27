@@ -42,6 +42,7 @@
                       @method('DELETE')
                       <button class="btn btn-danger" type="submit">
                           <i class="fa-solid fa-trash"></i>
+                          Cancella
                       </button>
                   </form>
 
