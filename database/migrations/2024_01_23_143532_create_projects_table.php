@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('title')->unique();
             $table->text('description')->nullable();
-            $table->date('project_date')->nullable();
             $table->string('slug')->unique();
             $table->timestamps();
         });
